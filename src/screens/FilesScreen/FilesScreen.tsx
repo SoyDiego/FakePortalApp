@@ -1,15 +1,17 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import {Text} from 'react-native-paper';
+import {Appbar, Text} from 'react-native-paper';
 
-const FilesScreen = ({navigation}) => {
+const FilesScreen = ({title, navigation}) => {
   return (
     <View style={styles.mainContainer}>
       <Text style={styles.textTitle}>Cards Sections</Text>
       <TouchableOpacity
         style={styles.container}
-        onPress={() => navigation.navigate('FilesDetails')}>
+        onPress={() =>
+          navigation.navigate('FilesDetails', {title: 'File name 1'})
+        }>
         <Text style={styles.text}>I'm a CARD</Text>
       </TouchableOpacity>
     </View>
