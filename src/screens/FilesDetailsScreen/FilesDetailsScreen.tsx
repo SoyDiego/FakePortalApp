@@ -1,12 +1,15 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {Appbar} from 'react-native-paper';
-const FilesDetailsScreen = ({route, navigation}) => {
+const FilesDetailsScreen = ({route}) => {
   const {title} = route.params;
 
   return (
     <>
-      <View style={styles.container}>
+      <View
+        accessibilityHint="asdasdasd"
+        accessibilityLabel="asdasdasdsad"
+        style={styles.container}>
         <Text style={styles.text}>Details of my File</Text>
       </View>
     </>
