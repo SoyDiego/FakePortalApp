@@ -86,13 +86,7 @@ export default function App() {
     <PaperProvider theme={theme}>
       <NavigationContainer>
         <BottomNavigation
-          theme={{colors: {secondaryContainer: theme.colors.primary}}}
-          barStyle={{backgroundColor: theme.colors.onPrimaryContainer}}
-          activeColor={theme.colors.background}
-          inactiveColor={theme.colors.surfaceVariant}
-          navigationState={{index, routes}}
-          onIndexChange={handleIndexChange}
-          renderScene={renderScene}
+          theme={{colors: {secondaryContainer: theme.colors.primary}}} barStyle={{backgroundColor: theme.colors.onPrimaryContainer}} activeColor={theme.colors.background} inactiveColor={theme.colors.surfaceVariant} navigationState={{index, routes}} onIndexChange={handleIndexChange} renderScene={renderScene}
         />
       </NavigationContainer>
     </PaperProvider>

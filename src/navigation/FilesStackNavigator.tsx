@@ -12,10 +12,8 @@ const FilesStackNavigator = () => {
     <Stack.Navigator
       initialRouteName="Files"
       screenOptions={{header: TopNavbar}}>
-      <Stack.Screen name="Files"
-component={FilesScreen} />
-      <Stack.Screen name="FilesDetails"
-component={FilesDetailsScreen} />
+      <Stack.Screen name="Files" component={FilesScreen} />
+      <Stack.Screen name="FilesDetails" component={FilesDetailsScreen} />
     </Stack.Navigator>
   );
 };
